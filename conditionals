@@ -1,0 +1,44 @@
+#!/bin/bash
+
+read -p "What is your name? " name
+
+read -p "How old are you? " age
+echo "Hello $name"
+
+# -ge means greater or equal to
+if [ $age -ge 16 ]
+then
+	echo "You can drive"
+# -eq means equal to
+elif [ $age -eq 15 ]
+then
+	echo "You can drive next year"
+else
+	echo "You can't drive"
+fi
+
+read -p "Enter a number : " num
+if ((num == 10)); then
+	echo "Your number equals 10"
+fi
+
+if ((num >= 10)); then
+	echo "It is greater than 10"
+else
+	echo "It is less than 10"
+fi
+
+if (( ((num % 2)) == 0)); then
+	echo "it is even"
+fi
+
+if (( ((num > 0)) && ((num < 11)) ));
+then
+	echo "$num is between 1 and 10"
+fi
+
+# if we are able to open this file, open this file with vim
+touch samp_file && vim samp_file
+
+# if sample directory doesnt exist, we want to make it
+[ -d samp_dir ] || mkdir sample_dir

@@ -17,3 +17,9 @@ if [ -e "$file1" ]; then
 		echo "$file1 is writable"
 	fi
 fi
+
+#if the file doesn't exist
+if [ ! -f "$file1" ]
+then
+	echo "$file1 does not exist"
+fi

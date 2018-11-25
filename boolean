@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#declare boolean variable
+istrue=true
+
+if [ "$istrue" == true ]
+then
+	echo "istrue is true"
+else
+	echo "istrue is false"
+fi
+
+istrue=false
+
+if [ "$istrue" != true ]
+then
+	echo "istrue is not true"
+else
+	echo "istrue is true"
+fi
+

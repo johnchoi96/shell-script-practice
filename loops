@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#for loop
+for i in {0..4}
+do
+	echo "i is $i"
+done
+
+#while loop
+i=0
+while [ $i -lt 10 ]
+do
+	echo "i is $i"
+	i=$(($i + 1))
+done

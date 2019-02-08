@@ -1,0 +1,8 @@
+
+output="$(ls -al)"
+echo "the output is $output"
+
+MULTILINE=$(ls \
+	-al)
+echo "$MULTILINE"
+
